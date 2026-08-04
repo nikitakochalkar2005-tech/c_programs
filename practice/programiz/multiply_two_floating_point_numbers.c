@@ -1,10 +1,15 @@
-#include<stdio.h>
-int main()
+/**
+ * this function is used to multiply two floating point numbers
+ */
+float multiply_float()
 {
-    int a,b,multiplication;
-    printf("Enter two numbers:");
-    scanf("%d %d",&a,&b);
-    multiplication = a*b;
-    printf("multiplication of two numbers is:%d",multiplication);
+}
 
+/**
+ * c program to multiply two floating point numbers
+ */
+int main(int argc, char const *argv[])
+{
+    /* code */
+    return 0;
 }
