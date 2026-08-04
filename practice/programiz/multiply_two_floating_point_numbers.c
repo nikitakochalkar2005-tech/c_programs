@@ -1,8 +1,10 @@
 /**
  * this function is used to multiply two floating point numbers
  */
-float multiply_float()
+float multiply_float(float first_number, float second_number)
 {
+     float product = first_number*second_number;
+     
 }
 
 /**
