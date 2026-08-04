@@ -1,5 +1,6 @@
 #include <stdio.h>
 /**
+ * f(x,y) = x * y
  * this function is used to multiply two floating point numbers
  */
 float multiply_float(float first_number, float second_number)
