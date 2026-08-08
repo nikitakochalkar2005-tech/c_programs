@@ -1,23 +1,31 @@
+#include<stdlib.h>
 #include<stdio.h>
-int main() {
-  double first, second, temp;
-  printf("Enter first number: ");
-  scanf("%lf", &first);
-  printf("Enter second number: ");
-  scanf("%lf", &second);
 
-  // value of first is assigned to temp
-  temp = first;
 
-  // value of second is assigned to first
-  first = second;
+/**
+ * @brief this function return integer value swaping the number 
+ * @return integer
+ * @param int 
+ */
 
-  // value of temp (initial value of first) is assigned to second
-  second = temp;
 
-  // %.2lf displays number up to 2 decimal points
-  printf("\nAfter swapping, first number = %.2lf\n", first);
-  printf("After swapping, second number = %.2lf", second);
+
+int main(int num1 , char const *argv[] )
+{
+  if (num1<1)
+  {
+    int void_number = num1;
+    printf("%i\n",void_number);
+  }
+  //int void_number = num1;
+  
+  int swaping_number = atoi(argv[1]);
+  int  swaping_number2 = atoi(argv[2]);
+   int temp = swaping_number2;
+   swaping_number2 = swaping_number ;
+    printf("%i\n",temp);
+    printf("%i\n",swaping_number);
+  
   return 0;
 }
 
