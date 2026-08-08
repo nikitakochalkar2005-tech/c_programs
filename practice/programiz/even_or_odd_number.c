@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
       printf("number is even :%i\n",num1);  
      }
     else{
-    printf("number is odd :%i\n",num1);
+    printf("number is odd:%i\n",num1);
     }
 
     return 0;
