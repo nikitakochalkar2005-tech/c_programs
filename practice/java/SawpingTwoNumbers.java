@@ -23,6 +23,7 @@ class SawpingTwoNumbers{
     System.out.println("After  Swaping the value is:"+num2);
     
 
+   input.close();
 
 
    }
