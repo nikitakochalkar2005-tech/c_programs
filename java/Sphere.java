@@ -1,23 +1,23 @@
 
 class Sphere {
 
-    double redius;
-    double volumeOfSphere;
+    double radius;
+    double volume;
 
-    void setRedius(double redius) {
-        this.redius = redius;
+    void setRadius(double radius) {
+        this.radius = radius;
     }
 
-    double totalOfVolumeSphere() {
-        double totalPayment = (4 * 3.14 * redius * redius * redius) / 3;
-        return totalPayment;
+     void  setVolume() {
+       this.volume  = (4 * 3.14 * radius * radius * radius) / 3;
+        
     }
 
     public static void main(String[] args) {
-        Sphere volumeSphereOneSphere = new Sphere();
-        volumeSphereOneSphere.setRedius(9);
-        double totalVolume = volumeSphereOneSphere.totalOfVolumeSphere();
-        System.out.println(totalVolume);
+        Sphere sphere = new Sphere();
+        sphere.setRadius(9);
+         sphere.setVolume();
+        System.out.println(sphere.volume);
 
     }
 }
