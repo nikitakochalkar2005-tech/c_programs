@@ -93,10 +93,19 @@ int main(void)
         print_array_elements(array, size);
         printf("enter a element:");
         scanf("%i", &key_element);
-        printf("element find at a index:");
-        binary_search(array, size, key_element);
+
+        int search_index = binary_search(array, size, key_element);
+        if (search_index == -1)
+        {
+            printf("element not found in a array\n");
+        }
+        else
+        {
+            printf("%i\n", search_index);
+        }
         break;
     default:
+        printf("invalid choice\n");
         break;
     }
     return 0;
