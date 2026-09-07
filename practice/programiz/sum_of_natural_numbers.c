@@ -9,10 +9,20 @@
 int sum_natural_numbers(int number, int stop_number)
 {
     int sum = 0;
-    for (number = 1; number <= stop_number; number++)
+    if (number > 0)
     {
-        sum = sum + number;
+        // for (number; number <= stop_number; number++)
+        // Pehla part khali chhod diya kyunki 'number' pehle se initialized hai
+        for (; number <= stop_number; number++)
+        {
+            sum = sum + number;
+        }
     }
+    else
+    {
+        printf("zero is not a natural number plz enter grater than zero number:");
+    }
+
     return sum;
 }
 
