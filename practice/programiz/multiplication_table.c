@@ -11,7 +11,7 @@ void multiplication_table(int number)
     {
 
         int product = number * number_multiply;
-        printf("%i\n", product);
+        printf("%d * %d = %d\n", number, number_multiply, product);
     }
 }
 
