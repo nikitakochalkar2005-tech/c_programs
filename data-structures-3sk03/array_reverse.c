@@ -2,6 +2,8 @@
 /**
  * @brief this function reverse the array elements
  * @param array konte array ko reverse karana hai
+ * @param size array ki size kitani hai
+ * @return void  mujhe function mai process execute  karana koi bhi output nahi chahiye function se
  */
 void reverse_array_element(int array[], int size)
 {
