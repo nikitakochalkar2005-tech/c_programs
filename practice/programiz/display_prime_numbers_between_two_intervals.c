@@ -3,7 +3,7 @@
  * @brief this function display between two intervals
  * @param start_number: the starting number of the interval
  * @param end_number: the ending number of the interval
- * @return int: the function returns 0 if successful, -1 if an error occurs
+ * @return int: the function returns 1 if successful, 0 if an error occurs
  */
 
 int display_prime_number_between_two_intervals(int start_number, int end_number)
