@@ -2,7 +2,7 @@
 /***
  * @brief this function display factors of a number
  * @param number : parameter number to find factors
- * @return
+ * @return void: mujhe function mai operation  karana hai
  */
 void display_factors_of_number(int number)
 {
