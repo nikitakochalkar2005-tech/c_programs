@@ -24,5 +24,8 @@ class ConvertBinaryNumberToDecimal {
         int decimal = convertBinaryToDecimal(binary_digit);
         System.out.println("Binary: " + binary_digit + " => Decimal: " + decimal);
         scanner.close();
+    
+
+///
     }
 }
