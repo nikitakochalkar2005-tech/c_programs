@@ -15,3 +15,6 @@ output = input()
 binary = int(output)
 decimal_digit = binary_digit_covert_into_decimal_digit(binary)
 print(binary,"binary digit convert into decimal digit",decimal_digit)
+
+
+#
