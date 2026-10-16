@@ -28,7 +28,7 @@ class CalculateStandardDeviation{
             System.out.println("enter an array element at index: " + index);
             array[index] = scanner.nextInt();
         }
-       
+       scanner.close();
         deviation(array,array_size);
 
     }
