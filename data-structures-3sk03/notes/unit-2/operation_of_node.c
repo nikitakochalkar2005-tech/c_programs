@@ -21,6 +21,11 @@ typedef struct operation_of_node
 operation_of_node *create_node(int data)
 {
     operation_of_node *new_node = (operation_of_node *)malloc(sizeof(operation_of_node));
+    if (new_node == NULL)
+    {
+        fprintf(stderr, "Memory allocation failed\n");
+        exit(EXIT_FAILURE);
+    }
     new_node->data = data;
     new_node->next = NULL;
     return new_node;
@@ -87,6 +92,8 @@ operation_of_node *append_node(operation_of_node *head, int data)
 
 operation_of_node *delete_node(operation_of_node *head, int key)
 {
+    operation_of_node *temp = head;
+
     if (head == NULL)
     {
         return NULL;
@@ -106,7 +113,7 @@ operation_of_node *delete_node(operation_of_node *head, int key)
         // free(head);
     }
     free(temp);
-    
+    return head;
 }
 
 int main(void)
