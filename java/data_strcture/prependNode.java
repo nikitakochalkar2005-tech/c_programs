@@ -1,7 +1,7 @@
-class Node{
-    int data;
-    Node next;
-    Node(int data){
+class Node<E>{
+    E data;
+    Node<E> next;
+    Node(E data){
         this.data = data;
         this.next = null;
     }
@@ -10,8 +10,8 @@ class Node{
 
 class prependNode{
     static Node head;
-    static void createNode(int data){
-        Node newNode = new Node(data);
+    static <E> void createNode(E data){
+        Node <E> newNode = new Node<>(data);
         if(head == null){
             head = newNode;
             return;
@@ -23,34 +23,35 @@ class prependNode{
         current.next = newNode;
    
     }
-    static Node addNodeInFirstPosition(int data){
-         Node newNode =new Node(data);
+    static <E> Node addNodeInFirstPosition(E data){
+         Node<E> newNode =new Node<>(data);
          newNode.next = head;
          head = newNode;
          return newNode;
 
     }
 
-    static void printNodes(){
+    static <E> void printNodes(){
         Node current = head;
         while(current != null){
             System.out.println(current.data);
             current = current.next;
         }
     }
-    static void printNode(Node head){
+    static <E> void printNode(Node head){
         Node current = head;
         if(current == null){
             System.out.println("node is empty");
         }
         while(current != null){
-            System.out.println(+current.data);
+            System.out.println(current.data);
             current = current.next;
         }
     }
 
     //static Node prependNode(Node head,E data)
     public static void main(String args[]){
+        
         createNode(20);
         createNode(30);
         addNodeInFirstPosition(34);
