@@ -1,0 +1,27 @@
+def swap_numbers_in_cyclic_oder(first_number, second_number , third_number):
+    first_number = first_number + second_number + third_number
+    second_number = first_number - (second_number + third_number)
+    third_number = first_number - (second_number + third_number)
+    first_number = first_number - (second_number + third_number)
+    print("first_number:=",first_number)
+    print("second_number:=",second_number)
+    print("third_number:=",third_number)
+
+
+print("enter a first number:")
+output = input()
+first_number = int(output)
+print("enter a second number")
+output = input()
+second_number = int(output)
+print("enter a third number")
+output = input()
+third_number = int(output)
+print("*"*80)
+print("before swapping number is")
+print("*"*80)
+print(f" first_number: = {first_number}\n second_number: = {second_number}\n third_number: = {third_number}")
+print("*"*80)
+print("after swapping number is ")
+print("*"*80)
+swap_numbers_in_cyclic_oder(first_number, second_number, third_number)
