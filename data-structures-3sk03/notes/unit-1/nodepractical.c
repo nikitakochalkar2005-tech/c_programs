@@ -72,12 +72,19 @@ node *delete_node(node *head, int data)
     if (head == NULL)
     {
         printf("node is empty can not be deleted\n");
+        return NULL;
     }
-    while (current->next_node->data != data)
+    while (current->next_node != NULL && current->next_node->data != data)
     {
         current = current->next_node;
     }
-    current->next_node = current->next_node->next_node;
+    if (current->next_node != NULL)
+    {
+        node *temp = current->next_node;
+        current->next_node = current->next_node->next_node;
+        free(temp);
+    }
+
     return head;
 }
 
